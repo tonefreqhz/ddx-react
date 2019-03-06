@@ -15,7 +15,6 @@ const theme = {
 		{[bp]: `@media (min-width: ${breakpoints[bp]}px)`}))),
 	maxq: Object.assign({}, ...Object.keys(breakpoints).map(bp => (
 		{[bp]: `@media (max-width: ${breakpoints[bp]}px)`}))),
-	
 }
 
 export default theme
