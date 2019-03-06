@@ -4,9 +4,9 @@ import PropTypes from 'prop-types'
 import Home from '../views/Home'
 
 const HomeContainer = (props) => {
-	useEffect(() => {
-		//
-	}, [])
+	//get artifact types and species count
+	// useEffect(() => {
+	// }, [])
 	return <Home/>
 }
 
