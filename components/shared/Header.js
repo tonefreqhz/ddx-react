@@ -77,19 +77,19 @@ const Header = () => {
 			</Link>
 		</div>
 		<div css={sectionRight}>
-			<Link href="/about">
+			<Link href="/about" prefetch>
 				<a css={navtag}>About</a>
 			</Link>
-			<Link href="/browse">
+			<Link href="/browse" prefetch>
 				<a css={navtag}>Browse Database</a>
 			</Link>
-			<Link href="/featured">
+			<Link href="/featured" prefetch>
 				<a css={navtag}>Featured</a>
 			</Link>
-			<Link href="/challenges">
+			<Link href="/challenges" prefetch>
 				<a css={navtag}>Challenges</a>
 			</Link>
-			<Link href="/contact">
+			<Link href="/contact" prefetch>
 				<a css={navtag}>Contact</a>
 			</Link>
 		</div>
