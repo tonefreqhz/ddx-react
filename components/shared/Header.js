@@ -31,6 +31,7 @@ const sectionLeft = css`
 
 const sectionRight = css`
 	${flexRow};
+	justify-content: flex-end;
 	margin-right: 50px;
 	${maxq['sm']} {
 		flex-wrap: wrap;
