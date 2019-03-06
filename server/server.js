@@ -4,7 +4,7 @@ const helmet = require('helmet')
 require('dotenv').config()
 
 const dev = process.env.NODE_ENV !== 'production'
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 3000;
 const ROOT_URL = `localhost:${port}`
 const app = next({ dev });
 const handle = app.getRequestHandler();
