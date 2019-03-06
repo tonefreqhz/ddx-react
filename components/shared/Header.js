@@ -63,13 +63,18 @@ const sectionLeftItem = css`
 
 const titleText = css`
 	font-weight: bold;
+	cursor: default;
 `
 
 const Header = () => {
 	return <div css={headerContainer}>
 		<div css={sectionLeft}>
-			<div css={[circleImage, sectionLeftItem]}/>
-			<div css={[titleText, sectionLeftItem]}>DDX</div>
+			<Link href={'/'}>
+				<div css={[circleImage, sectionLeftItem]}/>
+			</Link>
+			<Link href={'/'}>
+				<div css={[titleText, sectionLeftItem]}>DDX</div>
+			</Link>
 		</div>
 		<div css={sectionRight}>
 			<Link href="/about">

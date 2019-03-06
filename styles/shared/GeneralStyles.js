@@ -4,10 +4,12 @@ import theme from './Theme'
 export const flexRow = css`
 	display: flex;
 	flex-direction: row;
+	flex: 1 1 auto;
 `
 export const flexCol = css`
 	display: flex;
 	flex-direction: column;
+	flex: 1 1 auto;
 `
 
 export const justifyAlignCenter = css`
