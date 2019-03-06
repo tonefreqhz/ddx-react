@@ -5,6 +5,8 @@ import {css} from '@emotion/core'
 import {flexRow} from '../../styles/shared/GeneralStyles'
 import theme from '../../styles/shared/Theme'
 
+const maxq = theme.maxq //media query using max-width
+
 const headerContainer = css`
 	${flexRow};
 	align-items: center;
@@ -13,7 +15,7 @@ const headerContainer = css`
 	background-color: white;
 	color: black;
 	justify-content: space-between;
-	@media (max-width: 768px) {
+	${maxq['sm']} {
 		flex-wrap: wrap;
 		justify-content: flex-end;
 	};
@@ -22,7 +24,7 @@ const sectionLeft = css`
 	${flexRow};
 	align-items: center;
 	margin-left: 50px;
-	@media (max-width: 768px) {
+	${maxq['sm']} {
 		display: none;
 	};
 `
@@ -30,7 +32,7 @@ const sectionLeft = css`
 const sectionRight = css`
 	${flexRow};
 	margin-right: 50px;
-	@media (max-width: 768px) {
+	${maxq['sm']} {
 		flex-wrap: wrap;
 			margin: 0 20px;
 	};
@@ -44,7 +46,7 @@ const navtag = css`
 		text-decoration: underline;
 	};
 	margin: 0 10px;
-	@media (max-width: 768px) {
+	${maxq['sm']} {
 		margin: 5px;
 	};
 `
