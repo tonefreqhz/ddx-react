@@ -105,7 +105,7 @@ const Home = () => {
 					<h3 css={title}>Caltech DDX</h3>
 					<h6 css={introParagraph}>A public repository featuring xxxx electron tomography datasets of intact
 						bacterial and archaeal cells, representing xx species.</h6>
-					<Link href={'/browse'} passhref>
+					<Link href={'/browse'} passHref>
 						<button css={browseButton}>
 							Browse datatabase ->
 						</button>
