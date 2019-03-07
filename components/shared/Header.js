@@ -71,7 +71,8 @@ const navMenuContainer = (openMenu) => {
 			top: -12px;
 			right: 10px;
 			z-index: 300;
-			width: 150px;
+			width: 125px;
+			background-color: white;
 			img {
 				display: flex;
 				margin-bottom: 10px;
@@ -82,7 +83,6 @@ const navMenuContainer = (openMenu) => {
 				padding: 2px 0;
 				width: 125px;
 			    justify-content: flex-end;
-			    background-color: white;
 			}
 		};
 	`
