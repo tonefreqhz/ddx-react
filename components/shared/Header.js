@@ -24,6 +24,7 @@ const sectionLeft = css`
 	${flexRow};
 	align-items: center;
 	margin-left: 50px;
+	cursor: pointer;
 	${maxq['sm']} {
 		margin-left: 25px;
 	};
@@ -103,7 +104,6 @@ const sectionLeftItem = css`
 
 const titleText = css`
 	font-weight: bold;
-	cursor: default;
 `
 
 const Header = () => {
