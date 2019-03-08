@@ -98,5 +98,5 @@ Browse.getInitialProps = async (ctx) => {
 	return {}
 }
 
-export default withLayout(Browse)
+export default withLayout(Browse, {footer: true})
 
