@@ -4,6 +4,7 @@
   "description": "dynamic-distributed-template",
   "main": "index.js",
   "author": "orpheus",
+  "contributors": ["Prue Rees-lee"],
   "license": "MIT",
   "scripts": {
     "dev": "./node_modules/.bin/nodemon node server/server.js --watch server --exec",
