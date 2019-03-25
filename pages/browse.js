@@ -84,9 +84,11 @@ const Browse = (props) => {
 					                       css={css`
 					flex: 0 1 200px;
 					min-height: 250px;
-					background-color: #3f3f3f;
-					border: 1px solid white;
-					padding: 5px;
+                    background-color: #3f3f3f;
+                    background-image: url(https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg);
+                    background-position: center center;
+                    background-size: cover;
+                					padding: 5px;
 					margin: 20px;
 				`}
 					>
