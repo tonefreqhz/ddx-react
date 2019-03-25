@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import {css} from '@emotion/core'
 import theme from '../../styles/shared/Theme'
 
+
 const homeContainer = css`
 	display: flex;
 	flex-direction: row;
@@ -13,7 +14,6 @@ const homeContainer = css`
 const leftSection = css`
 	display: flex;
 	flex-direction: column;
-	padding: 20px;
 	flex: 0 0 50%;
 	${theme.maxq['sm']} {
 		display: none;
@@ -21,9 +21,12 @@ const leftSection = css`
 `
 
 const imageContainer = css`
-	background-color: darkred;
-	border-radius: 22px;
-	flex: 0 0 100%;
+	background-color: #2b2b2b;
+    flex: 0 0 100%;
+    background-image: url(https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg);
+    background-position: center center;
+    background-size: cover;
+
 `
 
 const rightSection = css`
@@ -36,43 +39,55 @@ const rightSection = css`
 	}
 `
 const introContentContainer = css`
-	display: block;
+    display: block;
+    max-width: 35vw;
+    margin: 50px auto;
+    ${theme.maxq['sm']} {
+		max-width: 100%;
+	}
 `
 
 const surtitle = css`
 	font-weight: bold;
-    border-bottom: 2px solid #e5342a;
     display: inline-block;
     padding-bottom: 5px;
     font-size: 18px;
-    letter-spacing: 1px;
 `
 const title = css`
-	font-size: 60px;
+	font-size: 5vw;
     line-height: 1.2;
     font-weight: bold;
+    margin: 0px;
+    ${theme.maxq['sm']} {
+		font-size: 60px;
+	}
 `
 const introParagraph = css`
     display: inline-block;
     margin-bottom: 20px;
     text-transform: none;
-    letter-spacing: 1px;
     font-size: 20px;
+    font-weight: normal;
     margin-top: 20px;
     line-height: 1.4;
 `
 const browseButton = css`
-	border-top: 1px solid #000;
-    border-bottom: 4px solid #000;
-    border-left: 4px solid #000;
-    border-right: 1px solid #000;
-    padding: 5px 10px;
-    color: #000;
-    font-size: 20px;
-    margin-top: 20px;
-    display: inline-block;
-    cursor: pointer;
+border: 0px;
+padding: 8px 20px;
+color: #fff;
+font-size: 20px;
+margin: 20px 0px;
+display: inline-block;
+cursor: pointer;
+background: #000;
+opacity: 1;
+transition: 0.3s;
+-moz-transition: 0.3s;
+-webkit-transition: 0.3s;
+&:hover {
+    opacity: .7;
 `
+
 
 const termsAndConditions = css`
     display: block;

@@ -8,13 +8,17 @@ import theme, {breakpoints} from '../../styles/shared/Theme'
 const maxq = theme.maxq //media query using max-width
 
 const headerContainer = css`
+    font-family: sans-serif;
 	${flexRow};
 	align-items: center;
 	flex: 1 1 auto;
 	height: ${theme.headerHeight};
 	background-color: white;
 	color: black;
-	justify-content: space-between;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    border-bottom: 1px solid #ddd;
 	${maxq['sm']} {
 		flex-wrap: wrap;
 		justify-content: flex-end;
@@ -41,9 +45,14 @@ const sectionRight = css`
 		align-items: center;
 		color: black;
 		text-decoration: none;
-		cursor: pointer;
+        cursor: pointer;
+        transition: 0.3s;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        opacity: .7;
 		&:hover {
-			text-decoration: underline;
+            text-decoration: none;
+            opacity: 1;
 		};
 		margin: 0 10px;
 		${maxq['sm']} {
@@ -72,8 +81,8 @@ const navMenuContainer = (openMenu) => {
 			top: -12px;
 			right: 10px;
 			z-index: 300;
-			width: 125px;
-			background-color: white;
+			width: 100vw;
+			background-color: transparent;
 			img {
 				display: flex;
 				margin-bottom: 10px;
@@ -83,7 +92,14 @@ const navMenuContainer = (openMenu) => {
 				display: ${menuDisplay};
 				padding: 2px 0;
 				width: 125px;
-			    justify-content: flex-end;
+                justify-content: flex-end;
+                background: peachpuff;
+                width: 100%;
+                margin: 0px;
+                padding: 20px 30px;
+                opacity: 1;
+                text-align: center;
+                margin-right: -31px;
 			}
 		};
 	`

@@ -1,6 +1,7 @@
 import {css} from '@emotion/core'
 import theme from './Theme'
 
+
 export const flexRow = css`
 	display: flex;
 	flex-direction: row;
@@ -17,9 +18,11 @@ export const justifyAlignCenter = css`
 	align-items: center;
 `
 export const LayoutContainer = css`
+    font-family: sans-serif;
 	${flexCol};
 	min-height: calc(100vh - ${theme.headerHeight});
-	background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    margin-top: ${theme.headerHeight};
 `
 
 

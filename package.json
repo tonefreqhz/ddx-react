@@ -4,7 +4,9 @@
   "description": "dynamic-distributed-template",
   "main": "index.js",
   "author": "orpheus",
-  "contributors": ["Prue Rees-lee"],
+  "contributors": [
+    "Prue Rees-lee"
+  ],
   "license": "MIT",
   "scripts": {
     "dev": "./node_modules/.bin/nodemon node server/server.js --watch server --exec",
@@ -25,7 +27,9 @@
     "react-dom": "^16.8.3",
     "redux": "^4.0.1",
     "redux-devtools-extension": "^2.13.8",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "roboto-fontface": "^0.10.0",
+    "typeface-roboto": "0.0.54"
   },
   "devDependencies": {
     "eslint": "^5.15.1",

@@ -5,12 +5,15 @@ import theme from '../../styles/shared/Theme'
 const maxq = theme.maxq //media query using max-width
 
 const footerContainer = css`
+            font-family: sans-serif;
 			display: flex;
 			flex-direction: row;
 			flex: 1 1 auto;
-			background-color: grey;
+			background-color: #fff;
 			min-height: 300px;
-			padding: 25px;
+            padding: 50px;
+            border-top: 1px solid #ddd;
+            line-height: 1.5;
 			${maxq['sm']} {
 				flex-direction: column;
 			}
@@ -20,80 +23,70 @@ const sectionLeft = css`
 				display: flex;
 				flex-direction: column;
 				flex: 1 1 auto;
-				background-color: blueviolet;
+                background-color: #ffffff;
+                width: 30%;
+                word-break: break-word;
+                padding: 10px;
 				${maxq['sm']} {
-					flex-direction: row;
+                    flex-direction: row;
+                    width: 100%;
+
 				}
 			`
-const leftTop = css`
-				display: flex;
-				flex-direction: row;
-				flex: 1 1 auto;
-				background-color: blue;
-			`
+
 
 const sectionRight = css`
 				display: flex;
 				flex-direction: row;
 				flex: 1 1 auto;
-				background-color: orange;
-				padding: 10px;
+				background-color: #f2f2f2;
+                padding: 10px;
+                width: 70%;
 				${maxq['sm']} {
-					flex-direction: column;
+                    flex-direction: column;
+                    width: 100%;
+
 				}
 			`
 const rightItem = css`
 					display: flex;
 					flex-direction: column;
-					flex: 1 1 30%;
+                    flex: 1 1 30%;
+                    padding-right: 20px;
 				`
 
 const Footer = (props) => {
 	return <div css={footerContainer}>
 		<div css={sectionLeft}>
-			<div css={leftTop}>
-				<p>Circle Image</p>
-				<p>Titlesomethingorsomethingsomethingsomethingsomething </p>
-			</div>
+		
 			<div css={css``}>
-				<p>
-					texttexttexttexttexttexttexttexttexttexttexttext\
-					texttexttexttexttexttexttexttexttexttexttexttext\
-					texttexttexttexttexttexttexttexttexttexttexttext\
-					texttexttexttexttexttexttexttexttexttexttexttext\
-					texttexttexttexttexttexttexttexttexttexttexttext\
-					texttexttexttexttexttexttexttexttexttexttexttext\
-					texttexttexttexttexttexttexttexttexttexttexttext\
-					texttexttexttexttexttexttexttexttexttexttexttext\
+				<h3>DDX Vanilla Template</h3>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim nec neque ut viverra. 
+				</p>
+                <p>
+                2019 
 				</p>
 			</div>
 		</div>
 		<div css={sectionRight}>
 			<div css={rightItem}>
-				<span>Circle Image</span>
+				<h3>Footer item 1</h3>
+
 				<p>
-					texttexttexttexttexttexttexttexttexttexttexttext\
-					texttexttexttexttexttexttexttexttexttexttexttext\
-					texttexttexttexttexttexttexttexttexttexttexttext\
-					texttexttexttexttexttexttexttexttexttexttexttext\
+                Aliquam ornare felis urna, et pretium nibh cursus sed. Vestibulum bibendum lobortis urna, in faucibus diam fringilla at. 
 				</p>
 			</div>
 			<div css={rightItem}>
-				<span>Circle Image</span>
+                 <h3>Footer item 2</h3>
 				<p>
-					texttexttexttexttexttexttexttexttexttexttexttext\
-					texttexttexttexttexttexttexttexttexttexttexttext\
-					texttexttexttexttexttexttexttexttexttexttexttext\
-					texttexttexttexttexttexttexttexttexttexttexttext\
+                Mauris molestie consequat commodo. Quisque bibendum eget quam id dapibus. Mauris feugiat, lacus ac faucibus tincidunt, diam est vehicula lacus, ut lobortis nibh felis id sem.
 				</p>
 			</div>
 			<div css={rightItem}>
-				<span>Circle Image</span>
+                <h3>Footer item 3</h3>
 				<p>
-					texttexttexttexttexttexttexttexttexttexttexttext\
-					texttexttexttexttexttexttexttexttexttexttexttext\
-					texttexttexttexttexttexttexttexttexttexttexttext\
-					texttexttexttexttexttexttexttexttexttexttexttext\
+                Maecenas a enim mauris. Maecenas pharetra rhoncus tempus. Duis venenatis tempus urna, ut aliquet est tempor finibus. 
 				</p>
 			</div>
 		</div>

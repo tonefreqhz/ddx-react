@@ -28,26 +28,30 @@ const Browse = (props) => {
 			flex-direction: column;
 		}
 	`}>
-			<div
+			<div id='filter-outer'
 				css={css`
 				display: flex;
 				flex-direction: column;
-				flex: 1 0 400px;
-				background-color: red;
-				padding: 20px 10px;
+				flex: 1 0 200px;
+				background-color: #fff;
+                padding: 20px 10px 20px 60px;
+                border-right: 1px solid #ddd;
 				${maxq['sm']} {
-					flex: 0 0 200px;
+                    flex: 0 0 200px;
+                    border-right: 0px;
+
 				}
 			`}
 			>
-				<div
+				<div id="filter-inner"
 					css={css`
 						display: flex;
 						flex: 1;
-						background-color: teal;
+						background-color: #fff;
 					`}
 				>
 				<form>
+                    <h3>Search & Filter</h3>
 					<input type={'text'} />
 				</form>
 				</div>
@@ -59,10 +63,8 @@ const Browse = (props) => {
 				flex-direction: row;
 				flex: 1 1 70%;
 				background-color: blue;
-                padding: 75px 50px 50px;
 				${maxq['sm']} {
 					flex: 2 1 70%;
-					padding: 40px 40px;
 
 				}
 			`}
@@ -72,18 +74,20 @@ const Browse = (props) => {
 				flex-direction: row;
 				flex: 1 1 auto;
 				flex-wrap: wrap;
-				background-color: yellow;
-				justify-content: space-evenly;
-
+				background-color: white;
+                justify-content: left;
+                padding: 25px;
+              
 			`}>
+                    
 					{mockArr.map(i => <div key={i}
 					                       css={css`
 					flex: 0 1 200px;
 					min-height: 250px;
-					background-color: green;
+					background-color: #3f3f3f;
 					border: 1px solid white;
 					padding: 5px;
-					margin: 5px;
+					margin: 20px;
 				`}
 					>
 					
