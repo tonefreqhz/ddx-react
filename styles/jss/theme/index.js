@@ -1,4 +1,4 @@
-import {ThemeProvider} from 'react-jss/src/index'
+import {ThemeProvider} from 'react-jss'
 import ThemeGenerator from './ThemeGenerator'
 import useTheme from './useTheme'
 
