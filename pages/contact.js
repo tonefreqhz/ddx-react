@@ -15,23 +15,20 @@ const Contact = (props) => {
 			<title>Contact DDX</title>
 		</Head>
 		<div css={css`
-		display: flex;
-		flex-direction: column;
-		flex: 1;
-		background-color: aqua;
+		
 	`}>
 			<div
 				css={css`
 				display: flex;
 				flex-direction: column;
 				flex: 1;
-				background-color: red;
+				background-color: #fafafa;
 				align-items: center;
 				justify-content: center;
 			`}
 			>
-				<h1>Title</h1>
-				<h2>Subtitle</h2>
+				<h1>Get in touch</h1>
+				<h2>Contact us</h2>
 			
 			</div>
 			<div
@@ -39,7 +36,7 @@ const Contact = (props) => {
 				display: flex;
 				flex-direction: row;
 				flex: 2 1 auto;
-				background-color: blue;
+				background-color: #fafafa;
                 padding: 50px 50px;
                 ${maxq['sm']} {
 					padding: 25px;
@@ -47,46 +44,61 @@ const Contact = (props) => {
 				}
 			`}
 			>
-				<div css={css`
-					display: flex;
-					flex-direction: column;
-					flex: 1 1 auto;
-					flex-wrap: wrap;
-					background-color: yellow;
-					justify-content: space-evenly;
+                <div id="contact-main"
+                css={css`
+				    width: 50%;					
 				`}>
+			
 					<div css={css`
 					display: flex;
 					flex-direction: column;
 					flex: 1 1 auto;
-					background-color: black;
+                    background-color: #fafafa;
 				`}>
-					
-					>
-					
-					</div>
-					<div css={css`
-					display: flex;
-					flex-direction: column;
-					flex: 2 1 auto;
-					background-color: papayawhip;
-				`}>
-					</div>
-					<div css={css`
-					display: flex;
-					flex-direction: column;
-					flex: 1 1 auto;
-					background-color: grey;
-				`}>
+                <b>Name</b>
+                <p>Position</p>
+                <p><b>p.</b> 123 456 7890</p>
+                <p><b>e.</b> person@email.com</p>
+
+
 					
 					</div>
 				</div>
 				<div css={css`
-					display: flex;
-					flex-direction: column;
-					flex: 1 1 auto;
-					background-color: green;
+					
 				`}>
+
+                    <form css={css`
+                        input {
+                            width: 100%;
+                            font-size: 16px;
+                            margin-bottom: 30px;
+                            padding: 10px;
+                        }
+                        textarea {
+                            width: 100%;
+                            padding: 10px;
+                            min-height: 250px;
+                            font-size: 16px;
+                        }    
+
+                        button#contact-submit {
+                            background: #000;
+                            border: 0px;
+                            color: #fff;
+                            padding: 10px;
+                            font-size: 16px;
+                            width: 200px;
+                            margin: 30px 0px;
+                        }                
+				`}>
+
+                        <input type={'text'} placeholder={'Your name'} tabindex={'1'} />
+                        <input type={'email'} placeholder={'Your email address'} tabindex={'2'} />
+                        <textarea  placeholder={'Type your message here'} tabindex={'3'} />
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    </form>
+
 				</div>
 			</div>
 		</div>
