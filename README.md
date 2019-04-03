@@ -1,6 +1,6 @@
 # [ddx-react Dashboard](https://oip.wiki)
 
-ddx-react was created using [create-react-app](https://github.com/facebook/create-react-app) and it uses the [Material UI](https://github.com/mui-org/material-ui) framework developed by Google.
+ddx-react was created using [create-react-app](https://github.com/facebook/create-react-app) and it uses the [Material UI](https://github.com/mui-org/material-ui) framework inspired by Google's Material Design.
 
 
 
@@ -107,13 +107,6 @@ ddx-react
         └── UserProfile
             └── UserProfile.jsx
 ```
-
-## Reporting Issues
-We use GitHub Issues as the official bug tracker for `ddx-react`. Here are some advices for our users that want to report an issue:
-
-1. Make sure that you are using the latest version of the `ddx-react`.
-2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
 ## Licensing
 
