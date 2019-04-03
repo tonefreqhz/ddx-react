@@ -1,0 +1,23 @@
+{
+  "name": "ddx-react",
+  "authors": [
+    "Allen McAfee"
+  ],
+  "description": "An OIP app made with react",
+  "main": "public/index.html",
+  "keywords": [
+    "oip",
+    "ipfs",
+    "flo coin"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "build"
+  ],
+  "private": true
+}
